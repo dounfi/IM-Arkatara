@@ -1,0 +1,118 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* IPB Mengajar — Scrapbook Design System (NEW PALETTE) */
+@layer base {
+  :root {
+    /* Brand palette (HSL Converted) */
+    --navy: 216 48% 23%;           /* #1f3658 */
+    --magenta-dark: 323 90% 25%;   /* #78064c */
+    --magenta-bright: 323 88% 44%; /* #d50d88 */
+    --yellow-primary: 46 100% 51%; /* #ffc603 */
+    --yellow-soft: 46 100% 83%;    /* #ffeba7 */
+    --red-dark: 352 80% 29%;       /* #870f19 */
+    --blue-soft: 226 94% 80%;      /* #9bb1fc */
+    --blue-very-soft: 223 93% 89%; /* #c9d8fd */
+    --blue-ice: 203 76% 97%;       /* #f0f8fd */
+    --cream-warm: 42 100% 94%;     /* #fff6e1 */
+    --coral: 13 100% 71%;          /* #ff8a69 */
+    
+    /* Mapped for Tailwind Config */
+    --blue-deep: 216 48% 23%;      /* Same as --navy */
+    --blue-light: 226 94% 80%;     /* Same as --blue-soft */
+
+    /* Semantic tokens */
+    --background: 203 76% 97%; /* blue-ice sebagai background utama */
+    --foreground: 216 48% 23%; /* navy sebagai teks utama */
+
+    --card: 0 0% 100%;
+    --card-foreground: 216 48% 23%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 216 48% 23%;
+
+    --primary: 216 48% 23%; /* navy menggantikan green-dark */
+    --primary-foreground: 203 76% 97%;
+
+    --secondary: 46 100% 51%; /* kuning */
+    --secondary-foreground: 216 48% 23%;
+
+    --muted: 42 100% 94%; /* cream-warm */
+    --muted-foreground: 216 20% 45%;
+
+    --accent: 323 90% 25%; /* magenta-dark */
+    --accent-foreground: 203 76% 97%;
+
+    --destructive: 352 80% 29%; /* red-dark */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 223 93% 89%; /* blue-very-soft */
+    --input: 223 93% 89%;
+    --ring: 216 48% 23%;
+
+    --radius: 0.85rem;
+
+    --sidebar-background: 203 76% 97%;
+    --sidebar-foreground: 216 48% 23%;
+    --sidebar-primary: 216 48% 23%;
+    --sidebar-primary-foreground: 203 76% 97%;
+    --sidebar-accent: 223 93% 89%;
+    --sidebar-accent-foreground: 216 48% 23%;
+    --sidebar-border: 226 94% 80%;
+    --sidebar-ring: 216 48% 23%;
+  }
+}
+
+/* Preloader transitions are handled by framer-motion in PreloaderTransition.tsx */
+
+@layer base {
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; background-color: hsl(var(--navy)); }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'DM Sans', system-ui, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 { @apply font-jakarta; }
+}
+
+@layer utilities {
+  .noise-overlay {
+    position: relative;
+    isolation: isolate;
+  }
+  .noise-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.05;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .dot-pattern {
+    background-image: radial-gradient(hsl(var(--blue-soft) / 0.4) 1.2px, transparent 1.2px);
+    background-size: 18px 18px;
+  }
+
+  .scrapbook-shadow {
+    box-shadow: 0 8px 24px -8px hsl(var(--navy) / 0.25), 0 2px 6px -2px hsl(var(--magenta-dark) / 0.15);
+  }
+
+  .polaroid-shadow {
+    box-shadow: 0 12px 30px -10px hsl(var(--navy) / 0.35), 0 4px 8px -2px hsl(var(--magenta-dark) / 0.2);
+  }
+
+  .yellow-underline {
+    background-image: linear-gradient(120deg, hsl(var(--yellow-primary)) 0%, hsl(var(--yellow-soft)) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.4em;
+    background-position: 0 88%;
+  }
+
+  .text-balance { text-wrap: balance; }
+
+  .leaflet-container { font-family: inherit; border-radius: inherit; }
+}

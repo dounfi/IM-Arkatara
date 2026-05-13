@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "kategori": "Mega Proker",
+    "tanggal": "19 APRIL 2026",
+    "judul": "Opening IM-BLINKS",
+    "deskripsi": "IM-Bimbingan Lingkar Kampus (IM-BLINKS) resmi dibuka! Program bimbingan belajar ini berfokus untuk mengajar anak-anak yang putus sekolah di desa binaan lingkar kampus dengan melibatkan seluruh manajemen IPB Mengajar.",
+    "file_gambar": "/assets/im-blinks.webp",
+    "konten": [
+      "Kabar gembira bagi dunia pendidikan di lingkar kampus! Pada tanggal 19 April 2026, IPB Mengajar secara resmi membuka program IM-Bimbingan Lingkar Kampus (IM-BLINKS). Acara pembukaan ini dihadiri oleh puluhan relawan mahasiswa dan anak-anak binaan dengan penuh antusiasme.",
+      "Program IM-BLINKS ini diinisiasi sebagai bentuk nyata pengabdian mahasiswa untuk merangkul anak-anak putus sekolah yang ada di desa binaan sekitar kampus. Melalui program ini, kami tidak hanya memberikan bimbingan belajar akademik, tetapi juga penanaman nilai moral dan motivasi agar mereka kembali memiliki mimpi besar untuk masa depan.",
+      "Sepanjang semester ini, kegiatan akan dilangsungkan secara rutin setiap akhir pekan. Harapannya, langkah kecil ini mampu menjadi pijakan awal yang kokoh bagi anak-anak lingkar kampus dalam menggapai cita-citanya."
+    ]
+  },
+  {
+    "id": 2,
+    "kategori": "Hubeks",
+    "tanggal": "8 MARET 2026",
+    "judul": "Kolaborasi Eksternal Ruang Pulih X IPB Mengajar",
+    "deskripsi": "Melakukan program berupa kegiatan amal, kegiatan pengabdian, ataupun pelatihan organisasi bertujuan untuk kolaborasi positif yang dapat meningkatkan dampak pengabdian.",
+    "file_gambar": "/assets/kolaborasi eksternal.webp",
+    "konten": [
+      "Divisi Hubungan Eksternal (Hubeks) IPB Mengajar kembali menorehkan langkah kolaboratif yang luar biasa. Pada 8 Maret 2026, IPB Mengajar secara resmi menjalin kolaborasi eksternal bersama komunitas Ruang Pulih.",
+      "Kegiatan yang dilangsungkan meliputi serangkaian program amal, aksi sosial pengabdian masyarakat, dan sesi pelatihan organisasi. Tujuan utama dari sinergi ini adalah menciptakan dampak pengabdian yang jauh lebih masif dengan menyatukan kekuatan dari dua komunitas yang memiliki visi serupa di bidang pendidikan dan sosial.",
+      "Dalam acara tersebut, perwakilan dari Ruang Pulih menyampaikan apresiasi yang tinggi terhadap semangat kerelawanan mahasiswa IPB. Ke depannya, kolaborasi ini diharapkan terus berlanjut ke dalam program-program jangka panjang yang berkelanjutan."
+    ]
+  },
+  {
+    "id": 3,
+    "kategori": "PSDM",
+    "tanggal": "28 FEBRUARI 2026",
+    "judul": "IM GATHERING",
+    "deskripsi": "Penyambutan resmi anggota baru IPB Mengajar Kabinet Arkatara. Menjadi langkah awal untuk menyatukan visi misi dan mempererat tali persaudaraan antar anggota.",
+    "file_gambar": "/assets/im-gath.webp",
+    "konten": [
+      "Halo, keluarga besar IPB Mengajar! Tanggal 28 Februari 2026 menjadi momen bersejarah dengan dilaksanakannya IM Gathering. Acara ini merupakan ajang penyambutan resmi bagi seluruh anggota baru yang tergabung dalam IPB Mengajar Kabinet Arkatara.",
+      "Diinisiasi oleh divisi PSDM, IM Gathering berlangsung dengan sangat meriah dan penuh kekeluargaan. Mulai dari games interaktif, sharing session bersama alumni, hingga perumusan komitmen bersama untuk satu tahun kepengurusan ke depan.",
+      "Momen ini menjadi langkah awal yang krusial untuk menyatukan frekuensi, visi, dan misi seluruh relawan. Dengan ikatan persaudaraan yang kuat, Kabinet Arkatara siap melangkah maju untuk memberikan dedikasi terbaik bagi pendidikan anak bangsa."
+    ]
+  }
+]

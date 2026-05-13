@@ -1,0 +1,42 @@
+[
+  { "id": 1, "monthIndex": 0, "date_text": "12 - 21 Jan 2026", "title": "Open Recruitment Staff", "description": "Pendaftaran calon relawan baru IPB Mengajar Kabinet Arkatara." },
+  { "id": 2, "monthIndex": 0, "date_text": "22 - 30 Jan 2026", "title": "Seleksi Staff", "description": "Tahapan seleksi berkas hingga wawancara calon staff baru." },
+  { "id": 3, "monthIndex": 0, "date_text": "31 Jan 2026", "title": "Diklat dan FGD", "description": "Pendidikan dan pelatihan dasar serta Focus Group Discussion." },
+  
+  { "id": 4, "monthIndex": 1, "date_text": "11 Feb 2026", "title": "Pengumuman Final Staff", "description": "Pengumuman resmi staff baru IPB Mengajar." },
+  { "id": 5, "monthIndex": 1, "date_text": "14 Feb 2026", "title": "Welcoming Party Arkatara", "description": "Pesta penyambutan meriah untuk anggota baru Kabinet Arkatara." },
+  { "id": 6, "monthIndex": 1, "date_text": "28 Feb 2026", "title": "IM-Gath & Sahabat", "description": "Gathering internal untuk mempererat tali persaudaraan anggota." },
+
+  { "id": 7, "monthIndex": 2, "date_text": "2 - 7 Mar 2026", "title": "Rapim #1 Mega Proker", "description": "Rapat pimpinan pembahasan konsep Mega Proker tahunan." },
+  { "id": 8, "monthIndex": 2, "date_text": "8 Mar 2026", "title": "Kolaborasi Eksternal", "description": "Sinergi bersama mitra eksternal untuk program berkelanjutan." },
+  { "id": 9, "monthIndex": 2, "date_text": "17 Mar 2026", "title": "IM-Quiz", "description": "Kegiatan kuis dan permainan interaktif edukatif." },
+
+  { "id": 10, "monthIndex": 3, "date_text": "17 Apr 2026", "title": "Temu Lentera", "description": "Puncak acara silaturahmi lintas angkatan IPB Mengajar." },
+  { "id": 11, "monthIndex": 3, "date_text": "19 Apr 2026", "title": "Opening IM - Blinks", "description": "Pembukaan resmi program Bimbingan Lingkar Kampus." },
+  { "id": 12, "monthIndex": 3, "date_text": "25 Apr 2026", "title": "IM - Blinks Day 1", "description": "Hari pertama kegiatan belajar mengajar lingkar kampus." },
+
+  { "id": 13, "monthIndex": 4, "date_text": "3 - 11 Mei 2026", "title": "Oprec Pengajar Inspiratif", "description": "Pendaftaran calon relawan pengajar untuk desa binaan." },
+  { "id": 14, "monthIndex": 4, "date_text": "14 Mei 2026", "title": "Ragen #1", "description": "Pelaksanaan Rapat General (Ragen) pertama seluruh anggota." },
+  { "id": 15, "monthIndex": 4, "date_text": "17 Mei 2026", "title": "Tes TPU & Psikotes PI", "description": "Tahap seleksi tertulis bagi calon Pengajar Inspiratif." },
+  { "id": 16, "monthIndex": 4, "date_text": "24 Mei 2026", "title": "Wawancara PI", "description": "Tahap seleksi akhir wawancara calon Pengajar Inspiratif." },
+  { "id": 17, "monthIndex": 4, "date_text": "30 Mei 2026", "title": "Stuba #1", "description": "Studi banding untuk peningkatan mutu organisasi." },
+
+  { "id": 18, "monthIndex": 5, "date_text": "7 - 10 Jun 2026", "title": "IM - Makrab", "description": "Agenda malam keakraban antar anggota IPB Mengajar." },
+  { "id": 19, "monthIndex": 5, "date_text": "28 - 30 Jun 2026", "title": "IM - Journal (LTT)", "description": "Pelatihan jurnalistik dan literasi." },
+
+  { "id": 20, "monthIndex": 6, "date_text": "11 Jul 2026", "title": "IM - Training Edelweis", "description": "Pelatihan persiapan penerjunan desa binaan." },
+  { "id": 21, "monthIndex": 6, "date_text": "19 - 31 Jul 2026", "title": "Edelweis", "description": "Pelaksanaan pengabdian Pengajar Inspiratif di desa binaan." },
+
+  { "id": 22, "monthIndex": 7, "date_text": "1 - 8 Ags 2026", "title": "Edelweis (Lanjutan)", "description": "Keberlanjutan kegiatan pengabdian di desa binaan." },
+  { "id": 23, "monthIndex": 7, "date_text": "22 Ags 2026", "title": "CTKIM", "description": "Kegiatan pembekalan karakter." },
+  { "id": 24, "monthIndex": 7, "date_text": "29 Ags 2026", "title": "IM - Talks", "description": "Diskusi santai seputar isu pendidikan terkini." },
+
+  { "id": 25, "monthIndex": 8, "date_text": "19 Sep 2026", "title": "Project Internship", "description": "Program magang pemberdayaan pendidikan." },
+  { "id": 26, "monthIndex": 8, "date_text": "26 Sep 2026", "title": "Stuba #2", "description": "Studi banding tahap dua." },
+
+  { "id": 27, "monthIndex": 9, "date_text": "3 Okt 2026", "title": "Diskusi Pendidikan", "description": "Diskusi mendalam mengenai isu pendidikan bersama stakeholder." },
+  { "id": 28, "monthIndex": 9, "date_text": "17 Okt 2026", "title": "IM - Podcast", "description": "Sesi rekaman podcast seputar kerelawanan." },
+
+  { "id": 29, "monthIndex": 10, "date_text": "7 Nov 2026", "title": "IMCA", "description": "Malam puncak apresiasi pengurus (IMCA)." },
+  { "id": 30, "monthIndex": 10, "date_text": "8 Nov 2026", "title": "Pergantian Pengurus", "description": "Pelantikan dan serah terima jabatan kepengurusan baru." }
+]

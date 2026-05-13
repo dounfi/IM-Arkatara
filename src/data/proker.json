@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "urutan": 1,
+    "nama_proker": "EDELWEIS x DISPEN",
+    "subtitle": "Education Weeks in School x Diskusi Pendidikan",
+    "deskripsi": "Edelweis x Dispen merupakan kolaborasi mega proker dari IPB Mengajar. Edelweis menghadirkan pengajar inspiratif di desa binaan selama 21 hari, meliputi tahap Pra, Pelaksanaan, dan Pasca. Kegiatan ini dirangkaikan dengan Dispen, sebuah forum diskusi mendalam mengenai isu-isu pendidikan bersama stakeholder untuk merumuskan solusi efektif demi kemajuan pendidikan Indonesia.",
+    "accent": "primary",
+    "grad": "from-muted via-accent to-primary",
+    "file_gambar": "/assets/edelweis.webp"
+  },
+  {
+    "id": 2,
+    "urutan": 2,
+    "nama_proker": "IM-BLINKS",
+    "subtitle": "IM-Bimbingan Lingkar Kampus",
+    "deskripsi": "IM-Bimbingan Lingkar Kampus (IM-BLINKS) merupakan kegiatan bimbingan belajar yang akan berfokus untuk mengajar anak-anak yang putus sekolah di desa binaan yang ada di lingkar kampus dengan melibatkan seluruh manajemen IM, orang tua peserta bimbingan, serta pemerintah setempat. Kegiatan ini akan dilaksanakan secara periodik selama masa kepengurusan.",
+    "accent": "yellow",
+    "grad": "from-yellow-secondary via-yellow-primary to-yellow-amber",
+    "file_gambar": "/assets/im-blinks.webp"
+  },
+  {
+    "id": 3,
+    "urutan": 3,
+    "nama_proker": "IM Internship",
+    "subtitle": "Pemberdayaan Pendidikan",
+    "deskripsi": "IM Internship merupakan bentuk serangkaian kegiatan untuk mengembangkan kemampuan dan pengetahuan bagi mahasiswa yang memiliki minat bidang pemberdayaan pendidikan di luar Manajemen IPB Mengajar yang diharapkan juga mampu mempromosikan UKM IPB Mengajar serta menunjang dan mendukung soft skill yang akan diimplementasikan selama ikut melaksanakan program IPB Mengajar dalam waktu 2 bulan.",
+    "accent": "teal",
+    "grad": "from-accent via-muted to-blue-light",
+    "file_gambar": "/assets/im intern.webp"
+  },
+  {
+    "id": 4,
+    "urutan": 4,
+    "nama_proker": "GOTA",
+    "subtitle": "Gerakan Orangtua Asuh",
+    "deskripsi": "GOTA (Gerakan Orangtua Asuh) merupakan salah satu program BPH IPB Mengajar yang bekerjasama dengan Agrianita IPB untuk memberikan pengajaran intensif dalam persiapan ujian sekolah baik tingkat SD, SMP, dan SMA sesuai kurikulum yang berlaku. Kegiatan ini akan dilaksanakan selama 20 pertemuan dalam 2 kali seminggu.",
+    "accent": "amber",
+    "grad": "from-yellow-amber via-yellow-secondary to-muted-foreground",
+    "file_gambar": "/assets/gota.webp"
+  }
+]

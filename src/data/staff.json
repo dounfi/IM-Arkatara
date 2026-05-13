@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nama": "Fulan",
+    "divisi": "PDP",
+    "bulan": "April 2026",
+    "file_gambar": "/assets/staff terbaik 1.webp"
+  },
+  {
+    "id": 2,
+    "nama": "Fulanah",
+    "divisi": "PSDM",
+    "bulan": "Mei 2026",
+    "file_gambar": "/assets/staff terbaik 2.webp"
+  },
+  {
+    "id": 3,
+    "nama": "Budi",
+    "divisi": "Hubeks",
+    "bulan": "Juni 2026",
+    "file_gambar": "/assets/staff terbaik 3.webp"
+  }
+]
