@@ -39,7 +39,6 @@ const Navbar = () => {
   const navigate = useNavigate();
   const { pathname } = useLocation();
   const { scrollY } = useScroll();
-  const logoRotate = useTransform(scrollY, [0, 500], [0, 360], { clamp: false });
 
   // ── Scroll detection ──
   useMotionValueEvent(scrollY, "change", (latest) => {
@@ -65,6 +64,8 @@ const Navbar = () => {
   const navVariants = {
     top: {
       width: "100%",
+      maxWidth: "1536px",
+      y: 0,
       borderRadius: "0px",
       backgroundColor: isHome ? "rgba(0,0,0,0)" : "rgba(31,54,88,1)",
       paddingTop: isHome ? "22px" : "14px",
@@ -76,13 +77,15 @@ const Navbar = () => {
     },
     scrolled: {
       width: "90%",
-      borderRadius: "9999px",
-      backgroundColor: "rgba(255,255,255,0.75)",
-      paddingTop: "8px",
-      paddingBottom: "8px",
-      paddingLeft: "16px",
-      paddingRight: "16px",
-      boxShadow: "0 8px 32px rgba(0,0,0,0.12)",
+      maxWidth: "1150px",
+      y: 20,
+      borderRadius: "32px",
+      backgroundColor: "rgba(255,255,255,0.85)",
+      paddingTop: "10px",
+      paddingBottom: "10px",
+      paddingLeft: "24px",
+      paddingRight: "24px",
+      boxShadow: "0 10px 30px -10px rgba(31,54,88,0.12)",
       borderColor: "rgba(255,255,255,0.6)",
     },
   };
@@ -103,15 +106,14 @@ const Navbar = () => {
           initial="top"
           animate={isScrolled ? "scrolled" : "top"}
           variants={navVariants}
-          transition={{ type: "spring", stiffness: 300, damping: 35, mass: 0.8 }}
-          className="flex items-center justify-between border border-transparent w-full max-w-screen-2xl pointer-events-auto"
+          transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+          className="relative flex items-center justify-between border border-transparent w-full max-w-screen-2xl pointer-events-auto"
           style={{ backdropFilter: isScrolled ? "blur(16px) saturate(1.8)" : "none" }}
         >
           {/* LEFT: Logo */}
           <Link to="/" className="flex items-center gap-3 group shrink-0">
             <div className="w-9 h-9 rounded-full bg-white flex items-center justify-center shadow-md shrink-0 overflow-hidden">
               <motion.img 
-                style={{ rotate: logoRotate }}
                 src="/logo-ipb-mengajar.webp" 
                 alt="Logo IPB Mengajar" 
                 className="w-full h-full object-contain p-1 origin-center" 
@@ -128,7 +130,7 @@ const Navbar = () => {
           </Link>
 
           {/* CENTER: Nav Links */}
-          <nav className="hidden lg:flex items-center gap-0.5">
+          <nav className="hidden lg:flex items-center gap-0.5 absolute left-1/2 -translate-x-1/2">
             <NavItem to="/" isScrolled={isScrolled}>Beranda</NavItem>
             <NavItem to="/about" isScrolled={isScrolled}>Tentang Kami</NavItem>
 
@@ -168,11 +170,14 @@ const Navbar = () => {
                 )}
               </AnimatePresence>
             </div>
+          </nav>
 
-            {/* Contact CTA */}
+          {/* RIGHT: Actions (Desktop CTA & Mobile Hamburger) */}
+          <div className="flex items-center gap-3 shrink-0">
+            {/* Desktop CTA */}
             <button
               onClick={goKontak}
-              className={`ml-1 px-6 py-2.5 rounded-full font-jakarta font-black text-sm transition-all duration-200 active:scale-95 ${
+              className={`hidden lg:inline-flex px-6 py-2.5 rounded-full font-jakarta font-black text-sm transition-all duration-200 active:scale-95 ${
                 isScrolled
                   ? "bg-primary text-white hover:bg-primary/80 shadow-md"
                   : "bg-yellow-primary text-primary hover:bg-yellow-secondary shadow-lg shadow-yellow-primary/20"
@@ -180,10 +185,8 @@ const Navbar = () => {
             >
               Kontak Kami
             </button>
-          </nav>
 
-          {/* RIGHT: Mobile Burger only */}
-          <div className="flex items-center shrink-0">
+            {/* Mobile Hamburger */}
             <button
               onClick={() => setMobileOpen(true)}
               className={`lg:hidden w-10 h-10 flex items-center justify-center rounded-full border transition-all ${

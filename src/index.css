@@ -69,7 +69,19 @@
 
 @layer base {
   * { @apply border-border; }
-  html { scroll-behavior: smooth; background-color: hsl(var(--navy)); }
+  html { 
+    scroll-behavior: smooth; 
+    background-color: hsl(var(--navy)); 
+  }
+  html, body, #root {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    min-height: 100vh !important;
+    max-width: 100% !important;
+    border-radius: 0 !important;
+    overflow-x: hidden;
+  }
   body {
     @apply bg-background text-foreground;
     font-family: 'DM Sans', system-ui, sans-serif;

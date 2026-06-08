@@ -28,6 +28,10 @@ interface Partner {
 const MediaPartner = () => {
   const partners = partnersData as Partner[];
 
+  const waMessage = `Halo IPB Mengajar! Kami tertarik untuk berkolaborasi sebagai Media Partner. Bolehkah kami meminta informasi ketentuan dan format kerja sama Media Partner? Terima kasih!`;
+
+  const waUrl = `https://wa.me/6282376913515?text=${encodeURIComponent(waMessage)}`;
+
   return (
   <>
     <PageHeader eyebrow="Aktivitas" title="Media" accent="Partner">
@@ -86,12 +90,14 @@ const MediaPartner = () => {
             Mari berkolaborasi bersama IPB Mengajar untuk menyebarkan semangat dan manfaat pendidikan ke seluruh Indonesia. Silakan hubungi tim kami untuk informasi lebih lanjut.
           </motion.p>
           <motion.div variants={itemVariants} className="mt-10">
-            <Link
-              to="/kontak"
+            <a
+              href={waUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-yellow-primary text-primary font-jakarta font-bold hover:bg-yellow-secondary transition-all hover:translate-y-[-2px] scrapbook-shadow"
             >
               Daftar Media Partner <ArrowRight className="w-4 h-4" />
-            </Link>
+            </a>
           </motion.div>
         </SectionReveal>
       </div>
