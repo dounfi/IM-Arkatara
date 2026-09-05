@@ -3,7 +3,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import PageHeader from "@/components/layout/PageHeader";
 import SectionReveal, { itemVariants } from "@/components/decor/SectionReveal";
 import Sticker from "@/components/decor/Sticker";
-import StaffCarousel from "@/components/team/StaffCarousel";
 import BPHCarousel from "@/components/team/BPHCarousel";
 import DivisiManajemen from "@/components/team/DivisiManajemen";
 import { bph, divisions, managers, staffByDivision, type Division } from "@/lib/data/team";

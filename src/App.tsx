@@ -19,6 +19,7 @@ import ProtectedRoute from "./components/admin/ProtectedRoute";
 
 import { LanguageProvider } from "./context/LanguageContext";
 import PreloaderTransition from "./components/layout/PreloaderTransition";
+import { Analytics } from "@vercel/analytics/react";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
         <TooltipProvider>
           <Toaster />
           <Sonner />
+          <Analytics />
           <BrowserRouter>
             <Routes>
               <Route element={<RootLayout />}>
