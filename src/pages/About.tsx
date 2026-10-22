@@ -250,6 +250,7 @@ const About = () => {
                 auto-rotate={false}
                 shadow-intensity="1"
                 environment-image="neutral"
+                loading="lazy"
                 style={{ width: "100%", height: "100%" }}
               />
               <Sticker type="star" color="text-yellow-primary" size={50} className="absolute top-4 right-4" float="sparkle" />

@@ -72,8 +72,12 @@ const ArtikelDetail = () => {
 
               {/* Featured Image */}
               {imageUrl && (
-                <div className="w-full aspect-[21/9] rounded-2xl overflow-hidden shadow-inner mb-10 bg-gray-100">
-                  <img src={imageUrl} alt={article.judul} className="w-full h-full object-cover" />
+                <div className="w-full rounded-2xl overflow-hidden shadow-md mb-10 bg-gray-50 flex items-center justify-center border border-black/5">
+                  <img 
+                    src={imageUrl} 
+                    alt={article.judul} 
+                    className="w-full h-auto max-h-[650px] object-contain rounded-2xl" 
+                  />
                 </div>
               )}
 

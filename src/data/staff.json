@@ -1,36 +1,36 @@
 [
   {
     "id": 1,
-    "nama": "Dhea Dwi Anisyah",
-    "divisi": "PSDM",
+    "nama": "Farisya Adhiystri Maulia",
+    "divisi": "PDP",
     "bulan": "April 2026",
     "file_gambar": "/assets/staff terbaik 1.webp"
   },
   {
     "id": 2,
-    "nama": "Ikrima Fitria",
+    "nama": "Sabrina Amelia W.",
     "divisi": "ENSHIP",
     "bulan": "Mei 2026",
     "file_gambar": "/assets/staff terbaik 2.webp"
   },
   {
     "id": 3,
-    "nama": "Nadila Adaniputri Y.",
-    "divisi": "MID",
+    "nama": "Aurel Suci Crysnina",
+    "divisi": "HUBEKS",
     "bulan": "Juni 2026",
     "file_gambar": "/assets/staff terbaik 3.webp"
   },
   {
     "id": 4,
-    "nama": "Akbar Rizki Rabbani",
-    "divisi": "HUBEKS",
+    "nama": "Kanza Aulia Putri",
+    "divisi": "PSDM",
     "bulan": "Juli 2026",
     "file_gambar": "/assets/staff terbaik 4.webp"
   },
   {
     "id": 5,
-    "nama": "Jessica Cheryl Lim",
-    "divisi": "PDP",
+    "nama": "Paulina Castanty Z.",
+    "divisi": "MID",
     "bulan": "Agustus 2026",
     "file_gambar": "/assets/staff terbaik 5.webp"
   }

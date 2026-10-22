@@ -53,7 +53,7 @@ const NewsPreview = () => {
                 >
                   <div className="relative aspect-video bg-gray-200 flex items-center justify-center">
                     {imageUrl ? (
-                      <img src={imageUrl} alt={n.judul} className="w-full h-full object-cover" />
+                      <img src={imageUrl} alt={n.judul} className="w-full h-full object-cover object-top" />
                     ) : (
                       <ImageIcon className="w-10 h-10 text-black/20" />
                     )}

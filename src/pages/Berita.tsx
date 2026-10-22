@@ -78,7 +78,7 @@ const Berita = () => {
                   >
                     <div className={`relative aspect-video flex items-center justify-center bg-gray-200`}>
                       {imageUrl ? (
-                        <img src={imageUrl} alt={n.judul} className="w-full h-full object-cover" />
+                        <img src={imageUrl} alt={n.judul} className="w-full h-full object-cover object-top" />
                       ) : (
                         <ImageIcon className="w-10 h-10 text-black/20" />
                       )}
