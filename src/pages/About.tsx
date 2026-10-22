@@ -1,5 +1,5 @@
 import { motion, useAnimationFrame, useMotionValue, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Glasses, GraduationCap, Landmark, BookOpen, Users, TrendingUp, Eye, Quote } from "lucide-react";
 import PageHeader from "@/components/layout/PageHeader";
 import SectionReveal, { itemVariants } from "@/components/decor/SectionReveal";
@@ -129,6 +129,15 @@ const About = () => {
   const { scrollYProgress } = useScroll({ target: filosofiRef, offset: ["start end", "center center"] });
   const orbitAngle = useTransform(scrollYProgress, [0, 1], [-90, 0]);
   const modelRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    if (!customElements.get("model-viewer")) {
+      const script = document.createElement("script");
+      script.type = "module";
+      script.src = "https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js";
+      document.head.appendChild(script);
+    }
+  }, []);
 
   useMotionValueEvent(orbitAngle, "change", (latest) => {
     if (modelRef.current) {

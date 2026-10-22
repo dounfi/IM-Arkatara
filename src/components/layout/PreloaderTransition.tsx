@@ -17,11 +17,11 @@ const PaperReveal: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     // Wait for a short time to simulate loading (or wait for actual load)
     const t1 = setTimeout(() => {
       setPhase("scattering");
-    }, 1200);
+    }, 150);
 
     const t2 = setTimeout(() => {
       setPhase("done");
-    }, 3000);
+    }, 500);
 
     return () => {
       clearTimeout(t1);
@@ -71,7 +71,7 @@ const PaperReveal: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         style={{ pointerEvents: phase === "done" ? "auto" : "none" }}
         initial={{ y: 80, opacity: 0 }}
         animate={phase === "scattering" || phase === "done" ? { y: 0, opacity: 1 } : { y: 80, opacity: 0 }}
-        transition={{ duration: 1.8, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
+        transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
       >
         {children}
       </motion.div>
@@ -83,7 +83,7 @@ const PaperReveal: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             <motion.div 
               initial={{ opacity: 1 }}
               animate={{ opacity: phase === "scattering" ? 0 : 1 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
               className="absolute inset-0 bg-[#f2eadb]" 
             />
 
@@ -105,9 +105,9 @@ const PaperReveal: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                   rotate: sheet.targetRot 
                 } : {}}
                 transition={{ 
-                  duration: r(2.0, 2.8, sheet.id), 
+                  duration: r(0.4, 0.7, sheet.id), 
                   ease: [0.65, 0, 0.15, 1],
-                  delay: phase === "scattering" ? sheet.delay : 0 
+                  delay: phase === "scattering" ? sheet.delay * 0.3 : 0 
                 }}
                 className="absolute shadow-2xl scrapbook-shadow"
                 style={{ 

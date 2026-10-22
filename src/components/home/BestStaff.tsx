@@ -124,6 +124,8 @@ const BestStaff = () => {
                           <img
                             src={imageUrl}
                             alt={`Staff Terbaik ${a.bulan}`}
+                            loading={idx < 5 ? "eager" : "lazy"}
+                            decoding="async"
                             className="w-full h-full object-cover"
                             draggable="false"
                           />

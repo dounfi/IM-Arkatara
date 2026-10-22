@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Play } from "lucide-react";
 import SectionReveal, { itemVariants } from "@/components/decor/SectionReveal";
 import WaveDivider from "@/components/decor/WaveDivider";
@@ -8,6 +8,7 @@ import Sticker from "@/components/decor/Sticker";
 
 const CompanyProfile = () => {
   const ref = useRef<HTMLDivElement>(null);
+  const [shouldLoadVideo, setShouldLoadVideo] = useState(false);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
   const yVid = useTransform(scrollYProgress, [0, 1], [60, -80]);
 
@@ -21,15 +22,17 @@ const CompanyProfile = () => {
           <motion.div
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
+            viewport={{ once: true, margin: "100px" }}
+            onViewportEnter={() => setShouldLoadVideo(true)}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             style={{ y: yVid }}
           >
             <div id="img-company-video" className="relative aspect-video rounded-2xl bg-black overflow-hidden scrapbook-shadow group cursor-pointer border-4 border-white/10">
               <video 
-                src="/company_profile.mp4" 
+                src={shouldLoadVideo ? "/company_profile.mp4" : undefined}
+                preload="none"
                 className="w-full h-full object-cover" 
-                autoPlay 
+                autoPlay={shouldLoadVideo}
                 muted 
                 loop 
                 playsInline 
