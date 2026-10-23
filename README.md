@@ -175,7 +175,7 @@ Kalo udah ganti periode kepengurusan:
 
 ---
 
-## 🚢 Cara Deploy ke Web (Biar Langsung Online)
+## 🚢 Cara Deploy ke Web & Info Domain
 
 Website ini udah kita konekin ke **Vercel**:
 1. Tiap kalian selesai edit dan tes di lokal, tinggal commit terus push ke branch `main`:
@@ -188,10 +188,16 @@ Website ini udah kita konekin ke **Vercel**:
    👉 **[ipbmengajar.web.id](https://ipbmengajar.web.id)**
 3. Tunggu 1–2 menit, langsung live di internet! ✨
 
+### ⚠️ PENTING BANGET: Catatan Masa Aktif Domain `ipbmengajar.web.id`!
+> **Inget ya:** Domain custom **`ipbmengajar.web.id`** ini kemarin cuma dibeli buat durasi **1 tahun**, dan masa aktifnya bakal **habis sekitar tanggal 07 Juni 2027 (07/06/2027)**.
+> 
+> Jadi buat temen-temen kabinet selanjutnya, **tolong pasang reminder di Google Calendar atau timeline divisi kalian**! Begitu masuk bulan Mei–Juni 2027, jangan lupa dananya disiapin buat perpanjang (renew) domainnya ya biar websitenya nggak down atau diambil orang lain wkwk.
+
 ---
 
 ## 💡 Tips Santuy
 - **Biasain `npm run build` dulu:** Sebelum push ke GitHub, tes build dulu di laptop kalian. Biar kalo ada salah ketik ketahuan duluan sebelum webnya error pas di-deploy.
+- **Catet tanggal expired domain:** 07 Juni 2027 ya, jangan sampe lupa diperpanjang!
 - Kalo bingung atau ada kendala kodingan, colek aja kita pengurus sebelumnya, santai aja xixixi!
 
 Semangat melanjutkan perjuangan di IPB Mengajar! Bikin kabinet kalian makin menyala dan berdampak luas! 🚀💛
