@@ -2,7 +2,7 @@
   <img src="public/logo-ipb-mengajar.webp" alt="Logo IPB Mengajar" width="110" />
   <h1>Website IPB Mengajar</h1>
   <p>Website resmi IPB Mengajar • <strong><a href="https://ipbmengajar.web.id">ipbmengajar.web.id</a></strong></p>
-  <p>⚠️ <em>Catatan Penting: Domain <strong>ipbmengajar.web.id</strong> sewa 1 tahun, habis sekitar <strong>07 Juni 2027 (07/06/2027)</strong>. Jangan lupa diperpanjang ya!</em></p>
+  <p>⚠️ <em>Catatan Domain: Sewa <strong>ipbmengajar.web.id</strong> habis <strong>8 Juni 2027</strong>. Info cara renew / ganti domain ada di bawah ya!</em></p>
 </div>
 
 ---
@@ -27,10 +27,19 @@ Panduan lengkapnya ada di bawah, dibaca santai yaa!
 
 ---
 
-## ⚠️ PENTING BANGET: Catatan Masa Aktif Domain `ipbmengajar.web.id`!
-> **Inget ya:** Domain custom **`ipbmengajar.web.id`** ini kemarin cuma dibeli buat durasi **1 tahun**, dan masa aktifnya bakal **habis sekitar tanggal 07 Juni 2027 (07/06/2027)**.
-> 
-> Jadi buat temen-temen kabinet selanjutnya, **tolong pasang reminder di Google Calendar atau timeline divisi kalian**! Begitu masuk bulan Mei–Juni 2027, jangan lupa dananya disiapin buat perpanjang (renew) domainnya ya biar websitenya nggak down atau diambil orang lain wkwk.
+## ⚠️ PENTING: Masa Aktif Domain `ipbmengajar.web.id` & Solusi Renew!
+
+> **Catetan penting soal domain:**  
+> Domain custom **`ipbmengajar.web.id`** ini kemarin dibeli di provider **DomaiNesia** buat durasi **1 tahun**, dan masa aktifnya bakal **habis tanggal 8 Juni 2027 (08/06/2027)**. Biaya perpanjangnya murah banget kok, cuma sekitar **Rp 55.000 / tahun**.
+
+Nah, buat kabinet selanjutnya kalau pas udah mau habis, opsinya ada 3:
+
+1. **Mau tetep pake domain ini & mau di-renew? (Rekomendasi)**  
+   Tinggal DM Instagram aku ke 👉 **[@fiavnz](https://instagram.com/fiavnz)** yaa! Nanti kalian tinggal transfer biayanya (~Rp 55rb), biar langsung aku bantu klik renew dan bayarin lewat akun DomaiNesia-ku.
+2. **Mau beli domain baru sendiri?**  
+   Bisa banget! Kalian bebas beli domain baru di mana aja (di DomaiNesia, Niagahoster, atau provider lain). Terus tinggal hubungin ke Vercel (buka menu *Project Settings ➔ Domains ➔ Add Domain*, lalu arahkan DNS CNAME-nya).
+3. **Kalo nggak mau diperpanjang / nggak beli domain baru?**  
+   Webnya tetep aman dan nggak bakal hilang kok! Webnya bakal otomatis tetap bisa dibuka lewat domain gratisan bawaan Vercel (misal: `*.vercel.app`).
 
 ---
 
@@ -200,7 +209,7 @@ Website ini udah kita konekin ke **Vercel**:
 
 ## 💡 Tips Santuy
 - **Biasain `npm run build` dulu:** Sebelum push ke GitHub, tes build dulu di laptop kalian. Biar kalo ada salah ketik ketahuan duluan sebelum webnya error pas di-deploy.
-- **Catet tanggal expired domain:** 07 Juni 2027 ya, jangan sampe lupa diperpanjang!
+- **Catet tanggal expired domain:** 08 Juni 2027 ya, chat ke IG [@fiavnz](https://instagram.com/fiavnz) kalau mau diperpanjang!
 - Kalo bingung atau ada kendala kodingan, colek aja kita pengurus sebelumnya, santai aja xixixi!
 
 Semangat melanjutkan perjuangan di IPB Mengajar! Bikin kabinet kalian makin menyala dan berdampak luas! 🚀💛
