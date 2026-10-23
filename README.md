@@ -1,262 +1,193 @@
 <div align="center">
-  <img src="public/logo-ipb-mengajar.webp" alt="Logo IPB Mengajar" width="120" />
-  <h1>Website Resmi IPB Mengajar</h1>
-  <p><strong>Langkah Kecil Untuk Negeri</strong></p>
-  <p>
-    Platform profil organisasi, publikasi kegiatan edukasi, dokumentasi program kerja, dan informasi manajemen IPB Mengajar.
-  </p>
-  <p>
-    <a href="https://ipbmengajar.web.id"><strong>🌐 Kunjungi Website: ipbmengajar.web.id</strong></a>
-  </p>
+  <img src="public/logo-ipb-mengajar.webp" alt="Logo IPB Mengajar" width="110" />
+  <h1>Website IPB Mengajar</h1>
+  <p>Website resmi IPB Mengajar • <strong><a href="https://ipbmengajar.web.id">ipbmengajar.web.id</a></strong></p>
 </div>
 
 ---
 
-## 📖 Tentang Repositori Ini
+## 👋 Halo, Pengurus Kabinet Selanjutnya!
 
-Repositori ini adalah **source code website resmi IPB Mengajar**. Kode ini dirancang dengan struktur berbasis komponen dan data terpusat (JSON & TypeScript) agar **mudah diwariskan dan diteruskan oleh pengurus kabinet berikutnya** tanpa harus merombak ulang seluruh kode dari awal.
+Repo ini adalah source code untuk website resmi IPB Mengajar. Tenang aja, kalian nggak perlu pusing mikirin kodingan dari nol atau ngutak-atik struktur yang rumit. 
 
-> 💡 **Pesan untuk Pengurus Kabinet Baru:**  
-> Jangan bingung atau takut! Sebagian besar pembaruan rutin (seperti menambah berita, mengganti foto best staff, mengganti pengurus, atau mengubah agenda) cukup dilakukan dengan mengedit file data JSON/TS dan menambahkan gambar di folder `public/`. Ikuti panduan lengkap di bawah ini.
+Sistem di web ini udah dirancang **modular dan berbasis data (JSON)**. Jadi buat kebutuhan rutin sehari-hari kayak:
+- Nambahin berita / dokumentasi kegiatan
+- Ganti Best Staff Quarter
+- Update susunan nama dan foto pengurus kabinet baru
+- Nambah agenda & info proker
+
+Kalian cukup **edit file data di folder `src/data/` atau `src/lib/data/`**, terus masukin fotonya ke folder `public/`. Selesai!
+
+Panduan lengkap dan praktisnya ada di bawah, dibaca santai aja yaa.
 
 ---
 
-## 🛠️ Teknologi yang Digunakan (Tech Stack)
+## 💻 Tech Stack yang Dipake
 
-Website ini dibangun menggunakan stack modern yang cepat, ringan, dan interaktif:
-
-- **Core**: [React 18](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
-- **Build Tool / Bundler**: [Vite 5](https://vitejs.dev/) (super cepat untuk local development & build)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/) + Vanilla CSS Custom Utilities
+Biar kalian ada gambaran web ini dibangun pake apa aja:
+- **Framework**: [React 18](https://react.dev/) + [Vite 5](https://vitejs.dev/) (ringan dan super cepet pas di-run)
+- **Bahasa**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Animasi & Interaksi**: [Framer Motion](https://www.framer.com/motion/)
-- **Komponen UI**: [Radix UI](https://www.radix-ui.com/) / Shadcn UI
-- **Model 3D Maskot**: Google [@google/model-viewer](https://modelviewer.dev/) (menampilkan 3D burung Owlia secara interaktif)
-- **Ikon**: [Lucide React](https://lucide.dev/)
-- **Formulir Kontak**: [EmailJS](https://www.emailjs.com/) (mengirim pesan kontak langsung ke email tanpa backend terpisah)
-- **Hosting & Deployment**: [Vercel](https://vercel.com/) (CI/CD otomatis dari branch `main`)
+- **Maskot 3D Owlia**: [@google/model-viewer](https://modelviewer.dev/) (animasi 3D interaktif burung Owlia)
+- **Form Kontak**: [EmailJS](https://www.emailjs.com/) (pesan dari form kontak langsung diteruskan ke email)
+- **Hosting / Deploy**: [Vercel](https://vercel.com/) (otomatis build setiap kali ada push ke branch `main`)
 
 ---
 
-## 🚀 Memulai (Local Development)
+## 🚀 Cara Menjalankan di Laptop / Komputer
 
-### 1. Prasyarat Sistem
-Pastikan di komputermu sudah terpasang:
-- **Node.js**: Versi `18.x` atau `20.x` atau lebih baru ([Download Node.js](https://nodejs.org/))
-- **Git**: Terpasang di komputermu
+Sebelum mulai, pastiin di laptop kalian udah terinstall:
+1. **Node.js** (rekomendasi versi 18 atau 20 ke atas).
+2. **Git**.
 
-### 2. Langkah Instalasi
-
-1. **Clone repository ini ke komputermu:**
+### Langkah-langkahnya:
+1. **Clone repo ini ke laptop:**
    ```bash
    git clone https://github.com/dounfi/IM-Arkatara.git
    cd IM-Arkatara
    ```
-
-2. **Install seluruh dependency package:**
+2. **Install semua package:**
    ```bash
    npm install
    ```
-
-3. **Siapkan file konfigurasi environment (`.env`):**  
-   Salin file template `.env.example` menjadi `.env`:
-   ```bash
-   cp .env.example .env
-   ```
-   Isi konfigurasi EmailJS (jika ingin fitur kirim email dari form kontak berjalan di lokal):
-   ```env
-   VITE_EMAILJS_SERVICE_ID=your_service_id
-   VITE_EMAILJS_TEMPLATE_ID=your_template_id
-   VITE_EMAILJS_PUBLIC_KEY=your_public_key
-   ```
-
+3. **Setup environment (`.env`):**  
+   Copy file `.env.example` lalu rename jadi `.env`. Isi credential EmailJS kalau mau ngetes form kontak di lokal (kalau belum ada atau cuma mau edit konten, dikosongkan dulu juga web tetep bisa jalan normal).
 4. **Jalankan development server:**
    ```bash
    npm run dev
    ```
-   Buka browsermu di alamat: `http://localhost:8080` (atau port yang tertera di terminal).
-
-5. **Build untuk produksi:**
+   Buka browser di alamat `http://localhost:8080`.
+5. **Cek build:**
    ```bash
    npm run build
    ```
-   Hasil build akan tersimpan di folder `dist/` dan siap dideploy.
+   Perintah ini dipakai untuk memastikan tidak ada error kode sebelum kalian push ke GitHub.
 
 ---
 
-## 📂 Struktur Direktori Penting
+## 📁 Peta Folder (Biar Nggak Nyasar)
+
+Ini bagian-bagian penting yang perlu kalian tahu:
 
 ```text
 IM-Arkatara/
-├── public/                       # Aset publik statis (langsung diakses via URL /...)
-│   ├── assets/                   # Foto kegiatan, poster best staff, banner
-│   ├── images/                   # Asset gambar umum, tim divisi, dan model 3D
-│   │   ├── owlia3dfix.glb        # Model 3D burung Owlia (sudah terkompresi Draco)
-│   │   └── team/                 # Foto-foto pengurus BPH, Manajer, & Divisi
-│   ├── company_profile.mp4       # Video company profile IPB Mengajar
-│   └── logo-ipb-mengajar.webp    # Favicon dan logo utama
+├── public/                 # File statis (gambar, video, 3D) yang langsung diakses via URL
+│   ├── assets/             # Foto kegiatan berita, poster best staff, banner
+│   ├── images/             # Asset gambar umum, tim divisi, & maskot 3D
+│   │   ├── owlia3dfix.glb  # Model 3D maskot burung Owlia
+│   │   └── team/           # Foto pengurus per divisi & BPH
+│   └── company_profile.mp4 # Video company profile
 │
 ├── src/
-│   ├── components/               # Komponen UI modular
-│   │   ├── decor/                # Elemen dekoratif (Sticker, WaveDivider, ParallaxOwl)
-│   │   ├── home/                 # Komponen halaman Beranda (Hero, BestStaff, NewsPreview, dll)
-│   │   ├── layout/               # Navbar, Footer, PageHeader, Preloader
-│   │   └── team/                 # Komponen kepengurusan & divisi
+│   ├── data/               # 📌 PALING SERING DIEDIT (Pusat data JSON)
+│   │   ├── news.json       # Berita & dokumentasi kegiatan
+│   │   ├── staff.json      # Best staff tiap quarter
+│   │   ├── proker.json     # Info proker tiap divisi
+│   │   └── agenda.json     # Kalender / jadwal kegiatan
 │   │
-│   ├── data/                     # ⭐ PUSAT DATA KONTEN (Paling sering diedit)
-│   │   ├── news.json             # Data artikel Berita & Kabar seluruh divisi
-│   │   ├── staff.json            # Data Best Staff Quarter
-│   │   ├── proker.json           # Data Program Kerja utama
-│   │   ├── agenda.json           # Data agenda kegiatan
-│   │   └── partners.json         # Data mitra kolaborasi & media partner
+│   ├── lib/data/
+│   │   └── team.ts         # 📌 Data nama, prodi, jabatan, & foto pengurus kabinet
 │   │
-│   ├── lib/
-│   │   └── data/
-│   │       └── team.ts           # ⭐ Data nama dan profil pengurus BPH, Manajer, Divisi
-│   │
-│   ├── pages/                    # Halaman-halaman website (Home, About, Berita, Divisi, dll)
-│   ├── App.tsx                   # Routing aplikasi (React Router)
-│   └── main.tsx                  # Entry point aplikasi
-│
-├── .env.example                  # Template environment variables
-├── package.json                  # Konfigurasi dependency npm
-├── tailwind.config.js            # Konfigurasi warna, font, dan tema Tailwind
-└── vite.config.ts                # Konfigurasi Vite
+│   ├── pages/              # Halaman web (Home, Berita, Divisi, Tentang Kami, dll)
+│   └── components/         # Komponen UI (Navbar, Footer, Hero, Carousel, dll)
 ```
 
 ---
 
-## 📋 PANDUAN PENGELOLAAN KONTEN (SOP PENGURUS BARU)
+## 📌 Panduan Praktis Update Konten
 
-Bagian ini adalah panduan praktis untuk hal-hal yang paling sering kalian perbarui:
+### 🚨 Paling Penting: Selalu Kompres Gambar ke WebP!
+Tolong banget **jangan upload foto mentah langsung dari kamera HP atau kamera DSLR** (yang ukurannya 3MB - 10MB per foto). Website bakal jadi berat banget pas dibuka dan kasihan pengunjung yang buka pake kuota.
 
-### ⚠️ ATURAN EMAS: Selalu Kompres Gambar Sebelum Di-upload!
-> **PENTING SEKALI:** Jangan pernah meng-upload foto mentah langsung dari kamera HP/DSLR (berukuran 3 MB – 10 MB per foto)! Hal tersebut akan membuat website menjadi **sangat berat, lambat dibuka**, dan menghabiskan kuota pengunjung.
->
-> **Ketentuan Gambar:**
-> 1. **Format Wajib**: Gunakan format `.webp` (bukan PNG/JPG mentah).
-> 2. **Ukuran File**: Usahakan di bawah **150 KB** per foto (untuk kartu/artikel) dan maksimal **300 KB** (untuk banner besar).
-> 3. **Cara Kompres Gratis & Mudah**:
->    - Buka [squoosh.app](https://squoosh.app/) atau [tinypng.com](https://tinypng.com/)
->    - Masukkan foto ➔ pilih format output **WebP** ➔ atur Quality ke **75–80%** ➔ download hasilnya.
+- **Format Wajib**: Convert dulu ke format `.webp`.
+- **Ukuran File**: Usahakan di bawah **150 KB** (maksimal 300 KB buat banner lebar).
+- **Tools Gratis & Cepet**: Pake [squoosh.app](https://squoosh.app/) atau [tinypng.com](https://tinypng.com/). Cukup upload fotonya, pilih format WebP, atur kualitas sekitar 75–80%, lalu download.
+- **Nama File**: Pakai huruf kecil dan tanda minus, jangan pakai spasi (contoh: `kegiatan-agsn-2026.webp`).
 
 ---
 
-### 1. 📰 Cara Menambah Berita & Kabar Baru
-Semua data berita tersimpan di file: [`src/data/news.json`](src/data/news.json).
+### 1. Nambah Berita / Dokumentasi Proker
+File: `src/data/news.json`
 
-1. Siapkan foto dokumentasi kegiatan (sudah dikompres ke format `.webp`), lalu letakkan di folder:  
-   `public/assets/nama-foto.webp`
-2. Buka file [`src/data/news.json`](src/data/news.json).
-3. Tambahkan objek berita baru di urutan paling atas array:
+1. Siapkan foto dokumentasi kegiatan (sudah format `.webp` dan dikompres).
+2. Simpan fotonya di folder `public/assets/nama-foto.webp`.
+3. Buka `src/data/news.json`, lalu tambahkan data berita baru di paling atas array:
    ```json
    {
      "id": 11,
-     "kategori": "MID",
-     "tanggal": "18 SEPTEMBER 2026",
+     "kategori": "PDP",
+     "tanggal": "24 OKTOBER 2026",
      "judul": "Judul Kegiatan atau Proker",
-     "deskripsi": "Ringkasan 1-2 kalimat pengantar kegiatan.",
+     "deskripsi": "Ringkasan 1-2 kalimat untuk preview di kartu berita.",
      "file_gambar": "/assets/nama-foto.webp",
      "konten": [
-       "Paragraf 1 artikel: jelaskan latar belakang kegiatan...",
-       "Paragraf 2 artikel: jelaskan jalannya kegiatan dan peserta...",
-       "Paragraf 3 artikel: jelaskan output dan harapan ke depan..."
+       "Paragraf pertama: cerita latar belakang dan tujuan kegiatan...",
+       "Paragraf kedua: keseruan selama acara berlangsung...",
+       "Paragraf ketiga: output atau harapan ke depannya..."
      ]
    }
    ```
-4. **Pilihan Kategori:**  
-   Gunakan salah satu dari: `"PDP"`, `"PSDM"`, `"Hubeks"`, `"MID"`, `"Enship"`, atau `"Mega Proker"`. Filter di halaman berita akan otomatis mengenali kategori ini.
+   *Pilihan kategori yang sudah terintegrasi dengan filter:* `"PDP"`, `"PSDM"`, `"Hubeks"`, `"MID"`, `"Enship"`, atau `"Mega Proker"`.
 
 ---
 
-### 2. 🌟 Cara Memperbarui Best Staff Quarter
-Data Best Staff tersimpan di: [`src/data/staff.json`](src/data/staff.json).
+### 2. Update Best Staff Quarter
+File: `src/data/staff.json`
 
-1. Siapkan 5 poster Best Staff (rasio portrait 3:4, resolusi disarankan 650x1004 piksel dalam format `.webp`).
-2. Masukkan ke `public/assets/`, misalnya:
-   - `public/assets/staff terbaik 1.webp`
-   - `public/assets/staff terbaik 2.webp`, dst.
-3. Buka [`src/data/staff.json`](src/data/staff.json) lalu update nama staf, divisi, dan triwulannya:
+1. Siapkan 5 poster Best Staff (rasio portrait 3:4, format `.webp`).
+2. Taruh fotonya di `public/assets/`, misalnya `staff terbaik 1.webp` sampai `staff terbaik 5.webp`.
+3. Buka `src/data/staff.json`, lalu sesuaikan nama staf, divisi, dan periodenya:
    ```json
-   [
-     {
-       "id": 1,
-       "nama": "Nama Lengkap Staf",
-       "divisi": "PDP",
-       "bulan": "Quarter 1",
-       "file_gambar": "/assets/staff terbaik 1.webp"
-     }
-   ]
+   {
+     "id": 1,
+     "nama": "Nama Lengkap Staf",
+     "divisi": "PDP",
+     "bulan": "Quarter 1",
+     "file_gambar": "/assets/staff terbaik 1.webp"
+   }
    ```
-4. Simpan, dan tampilan carousel 3D di halaman beranda akan langsung menampilkan foto baru.
+   Tampilan carousel 3D di beranda bakal otomatis mengupdate kartu tersebut.
 
 ---
 
-### 3. 👥 Cara Memperbarui Struktur Pengurus Kabinet Baru
-Data profil pengurus tersimpan di: [`src/lib/data/team.ts`](src/lib/data/team.ts).
+### 3. Ganti Struktur & Foto Pengurus Kabinet Baru
+File: `src/lib/data/team.ts`
 
-1. Buka file [`src/lib/data/team.ts`](src/lib/data/team.ts).
-2. Di dalam file tersebut ada 3 data utama:
-   - `bph`: Daftar Direktur, Wakil, Sekretaris, Bendahara.
-   - `managers`: Daftar Manajer tiap divisi.
-   - `staffByDivision`: Daftar staf lengkap per divisi.
-3. Update nama, program studi/angkatan, dan foto masing-masing.
-4. Foto pengurus diletakkan di folder:
-   - BPH: `public/images/team/bph/`
-   - Manajer: `public/images/team/manager/`
-   - Foto bersama Divisi: `public/images/team/Divisi/`
+Pas pergantian kabinet:
+1. Masukkan foto-foto pengurus baru ke `public/images/team/` (sudah ada subfolder `bph/`, `manager/`, dan `Divisi/`).
+2. Buka `src/lib/data/team.ts`.
+3. Kalian tinggal update data di array:
+   - `bph`: Direktur, Wakil Direktur, Sekretaris, Bendahara.
+   - `managers`: Manajer masing-masing divisi.
+   - `staffByDivision`: Seluruh anggota staf per divisi.
+4. Ganti nama, program studi/angkatan, dan path fotonya.
 
 ---
 
-### 4. 🦉 Model 3D Maskot Owlia
-- File model 3D berada di: `public/images/owlia3dfix.glb`.
-- Model ini telah dioptimasi dengan kompresi **Draco** dan *mesh decimation* (dari 3.44 MB menjadi hanya **598 KB**).
-- Menggunakan library Google `<model-viewer>` yang dimuat secara dinamis (*lazy load*) agar tidak memperberat halaman lain.
-- Jika suatu saat maskot diganti dengan model 3D baru, **pastikan mengompresi file `.glb` terlebih dahulu** menggunakan tools seperti `gltf-transform optimize model.glb model-opt.glb --compress draco`.
+### 4. Maskot 3D Owlia & Video Profil
+- **Maskot 3D (`public/images/owlia3dfix.glb`)**: Maskot burung Owlia ini sudah dioptimasi kompresi Draco (ukurannya cuma ~590 KB) dan jalan via Google `<model-viewer>`. Kalau nanti kabinet baru mau ganti 3D, jangan lupa dikompres dulu ya biar gak berat.
+- **Video Profile (`public/company_profile.mp4`)**: Komponen video di beranda sudah di-set *lazy load* (hanya di-download saat discroll). Kalau mau ganti video profil, usahakan ukuran file di bawah 15 MB atau bisa juga di-embed dari YouTube.
 
 ---
 
-### 5. 🎬 Video Company Profile
-- Video profil utama tersimpan di: `public/company_profile.mp4`.
-- Komponen video di halaman Beranda sudah dilengkapi sistem *lazy-load* (video baru mulai dimuat jika pengunjung men-scroll ke bagian tersebut).
-- Jika ada video profil kabinet baru, sangat disarankan untuk mengompresi video ke resolusi 1080p dengan bitrate sedang (ukuran file disarankan < 15 MB) atau meng-embed dari YouTube agar tidak membebani hosting.
+## 🚢 Cara Deploy ke Web (Biar Langsung Online)
 
----
-
-## 🚢 Panduan Deployment (Publikasi ke Web)
-
-Website ini terhubung langsung ke **Vercel** dengan continuous deployment:
-
-1. Setiap kali kalian melakukan `git push` ke branch `main`:
+Website ini sudah tersambung langsung ke **Vercel**:
+1. Setelah kalian selesai edit dan tes di lokal, cukup commit dan push ke branch `main`:
    ```bash
    git add .
-   git commit -m "feat: perbarui data pengurus kabinet baru"
+   git commit -m "Update pengurus dan berita baru"
    git push origin main
    ```
-2. Vercel akan otomatis mendeteksi perubahan, menjalankan `npm run build`, dan mempublikasikannya ke domain resmi:
-   👉 **https://ipbmengajar.web.id**
-3. Proses deploy biasanya memakan waktu sekitar **1–2 menit**.
+2. Vercel akan otomatis mendeteksi perubahan, nge-build ulang, dan langsung mempublikasikan hasilnya ke domain resmi:  
+   👉 **[ipbmengajar.web.id](https://ipbmengajar.web.id)**
+3. Tunggu sekitar 1–2 menit, perubahan sudah langsung live di internet!
 
 ---
 
-## 📜 Perintah yang Tersedia (NPM Scripts)
+## 💡 Tips Santai
+- **Cek build dulu sebelum push:** Selalu sempatkan jalankan `npm run build` di terminal laptop. Kalau ada salah ketik atau file yang lupa ter-import, bakal ketahuan sebelum terlanjur di-push.
+- Kalau ada bagian yang bikin bingung atau butuh bantuan teknis, jangan ragu kontak pengurus periode sebelumnya ya!
 
-| Perintah | Fungsi |
-| :--- | :--- |
-| `npm run dev` | Menjalankan server lokal pengembangan di port 8080 |
-| `npm run build` | Mengompilasi kode menjadi bundle produksi di folder `dist/` |
-| `npm run preview` | Menjalankan preview lokal dari hasil build `dist/` |
-| `npm run lint` | Menjalankan pengecekan ESLint untuk memastikan kerapian kode |
-
----
-
-## 🤝 Tips & Catatan Penting
-- **Selalu uji build sebelum push:** Jalankan `npm run build` di terminal lokalmu sebelum push ke GitHub untuk memastikan tidak ada kesalahan ketik (*syntax error*) atau error TypeScript.
-- **Nama File Tanpa Spasi Lebih Baik:** Saat menamai file gambar baru, lebih baik gunakan tanda minus (`kegiatan-mengajar.webp`) daripada spasi agar link URL aman di semua browser.
-- **Jaga Konsistensi Brand:** Warna utama tema dapat dilihat di `tailwind.config.js` (kuning ceria khas IPB Mengajar, biru navy yang profesional, dan aksen pastel scrapbook).
-
----
-
-<div align="center">
-  <p>Dibuat dengan ❤️ dan dedikasi untuk <strong>IPB Mengajar</strong></p>
-  <p><em>"Langkah Kecil Untuk Negeri"</em></p>
-</div>
+Semangat melanjutkan estafet perjuangan IPB Mengajar! Semoga websitenya terus bermanfaat dan makin kece! ✨
