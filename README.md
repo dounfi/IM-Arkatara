@@ -1,7 +1,15 @@
 <div align="center">
-  <img src="public/logo-ipb-mengajar.webp" alt="Logo IPB Mengajar" width="110" />
+  <img src="public/logo-ipb-mengajar.webp" alt="Logo IPB Mengajar" width="115" />
   <h1>Website IPB Mengajar</h1>
-  <p>Website resmi IPB Mengajar • <strong><a href="https://ipbmengajar.web.id">ipbmengajar.web.id</a></strong></p>
+  <p><strong>Platform Resmi Publikasi & Dokumentasi Kegiatan IPB Mengajar</strong></p>
+
+  <p>
+    <a href="https://ipbmengajar.web.id"><img src="https://img.shields.io/badge/Website_Resmi-ipbmengajar.web.id-0070F3?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" /></a>
+    <a href="https://github.com/dounfi/IM-Arkatara"><img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+    <a href="https://instagram.com/fiavnz"><img src="https://img.shields.io/badge/PIC_MID-@fiavnz-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
+    <img src="https://img.shields.io/badge/Status-Live_%26_Active-2ea44f?style=for-the-badge&logo=vercel&logoColor=white" alt="Status" />
+  </p>
+
   <p>⚠️ <em>Catatan Domain: Sewa <strong>ipbmengajar.web.id</strong> habis <strong>8 Juni 2027</strong>. Info cara renew / ganti domain ada di bawah ya!</em></p>
 </div>
 
@@ -16,10 +24,10 @@ Tenang aja, kalian nggak perlu pusing mikirin kodingan dari nol atau ngutak-atik
 *(Oiya, maaf ya aku ngetik README ini dibantuin AI soalnya mager wkwk, tapi tenang isinya beneran valid dan udah dicek kok!)*
 
 Semua sistem di web ini udah dirancang **modular dan berbasis data (JSON)**. Jadi buat kebutuhan rutin sehari-hari kayak:
-- Nambahin berita / dokumentasi kegiatan
-- Ganti Best Staff Quarter
-- Update susunan nama, jabatan, dan foto pengurus baru
-- Nambah agenda & info proker
+- 📰 Nambahin berita / dokumentasi kegiatan
+- 🌟 Ganti Best Staff Quarter
+- 👥 Update susunan nama, jabatan, dan foto pengurus baru
+- 📅 Nambah agenda & info proker
 
 Kalian cukup **edit file JSON di folder `src/data/` atau `src/lib/data/`**, terus cemplungin fotonya ke folder `public/`. Beres deh, tanpa perlu pusing ngoding komponen dari nol!
 
@@ -34,12 +42,11 @@ Panduan lengkapnya ada di bawah, dibaca santai yaa!
 
 Nah, buat kabinet selanjutnya kalau pas udah mau habis, opsinya ada 3:
 
-1. **Mau tetep pake domain ini & mau di-renew? (Rekomendasi)**  
-   Tinggal DM Instagram aku ke 👉 **[@fiavnz](https://instagram.com/fiavnz)** yaa! Nanti kalian tinggal transfer biayanya (~Rp 55rb), biar langsung aku bantu klik renew dan bayarin lewat akun DomaiNesia-ku.
-2. **Mau beli domain baru sendiri?**  
-   Bisa banget! Kalian bebas beli domain baru di mana aja (di DomaiNesia, Niagahoster, atau provider lain). Terus tinggal hubungin ke Vercel (buka menu *Project Settings ➔ Domains ➔ Add Domain*, lalu arahkan DNS CNAME-nya).
-3. **Kalo nggak mau diperpanjang / nggak beli domain baru?**  
-   Webnya tetep aman dan nggak bakal hilang kok! Webnya bakal otomatis tetap bisa dibuka lewat domain gratisan bawaan Vercel (misal: `*.vercel.app`).
+| Opsi | Pilihan Tindakan | Keterangan & Cara |
+| :---: | :--- | :--- |
+| **1** | **Mau tetep pake domain ini & mau di-renew? (Rekomendasi)** | Tinggal DM Instagram aku ke 👉 <a href="https://instagram.com/fiavnz"><img src="https://img.shields.io/badge/DM_Instagram-@fiavnz-E4405F?style=flat-square&logo=instagram&logoColor=white" valign="middle" /></a> yaa! Nanti kalian tinggal transfer biayanya (~Rp 55rb), biar langsung aku bantu klik renew dan bayarin lewat akun DomaiNesia-ku. |
+| **2** | **Mau beli domain baru sendiri?** | Bisa banget! Kalian bebas beli domain baru di mana aja (di DomaiNesia, Niagahoster, dll), terus tinggal hubungin ke Vercel (buka menu *Project Settings ➔ Domains ➔ Add Domain*, lalu arahkan DNS CNAME-nya). |
+| **3** | **Kalo nggak mau diperpanjang / nggak beli domain baru?** | Webnya tetep aman dan nggak bakal hilang kok! Webnya bakal otomatis tetap bisa dibuka lewat domain gratisan bawaan Vercel (misal: `*.vercel.app`). |
 
 ---
 
@@ -71,31 +78,18 @@ Biar kalian nggak penasaran jeroan web ini pake apa aja, nih teknologinya:
 ## 🚀 Cara Jalanin di Laptop
 
 Pastiin di laptop kalian udah kepasang:
-1. **Node.js** (versi 18 atau 20 ke atas ya).
-2. **Git**.
+- <img src="https://skillicons.dev/icons?i=nodejs" height="18" valign="middle" /> **Node.js** (versi 18 atau 20 ke atas ya) • [Download Node.js](https://nodejs.org/)
+- <img src="https://skillicons.dev/icons?i=git" height="18" valign="middle" /> **Git** • [Download Git](https://git-scm.com/)
 
-### Caranya gampang:
-1. **Clone repo ini:**
-   ```bash
-   git clone https://github.com/dounfi/IM-Arkatara.git
-   cd IM-Arkatara
-   ```
-2. **Install semua dependensi:**
-   ```bash
-   npm install
-   ```
-3. **Setup file `.env`:**  
-   Copy file `.env.example` terus rename jadi `.env`. Isi kunci EmailJS kalo mau ngetes form kontak di lokal (tapi kalau cuma mau update konten/berita, dikosongin dulu juga web tetep aman & jalan normal kok).
-4. **Jalanin server lokal:**
-   ```bash
-   npm run dev
-   ```
-   Tinggal klik link `http://localhost:8080` yang muncul di terminal.
-5. **Cek build:**
-   ```bash
-   npm run build
-   ```
-   Ini buat ngecek ada error atau enggak sebelum kalian push ke GitHub.
+### Langkah-langkahnya (Tinggal Ikuti Step):
+
+| Step | Aksi | Perintah Terminal |
+| :---: | :--- | :--- |
+| ![Step 1](https://img.shields.io/badge/Step_1-Clone-0969da?style=flat-square) | Clone repo ini ke laptop kalian | `git clone https://github.com/dounfi/IM-Arkatara.git` <br> `cd IM-Arkatara` |
+| ![Step 2](https://img.shields.io/badge/Step_2-Install-0969da?style=flat-square) | Install semua package & dependensi | `npm install` |
+| ![Step 3](https://img.shields.io/badge/Step_3-Setup_.env-0969da?style=flat-square) | Copy file template konfigurasi | Copy `.env.example` lalu rename jadi `.env` |
+| ![Step 4](https://img.shields.io/badge/Step_4-Jalanin-2ea44f?style=flat-square) | Nyalakan server development lokal | `npm run dev` <br> *(Buka browser di `http://localhost:8080`)* |
+| ![Step 5](https://img.shields.io/badge/Step_5-Cek_Build-8957e5?style=flat-square) | Tes build sebelum di-push ke GitHub | `npm run build` |
 
 ---
 
@@ -105,7 +99,7 @@ Nih contekannya, kalian cuma perlu fokus ke folder-folder ini aja:
 
 ```text
 IM-Arkatara/
-├── public/                 # Tempat naruh file aset (foto, video, 3D)
+├── public/                 # 🖼️ Tempat naruh file aset (foto, video, 3D)
 │   ├── assets/             # Foto berita, poster best staff, banner
 │   ├── images/             # Gambar umum, foto tim divisi, & maskot 3D
 │   │   ├── owlia3dfix.glb  # File 3D burung Owlia
@@ -113,17 +107,17 @@ IM-Arkatara/
 │   └── company_profile.mp4 # Video company profile
 │
 ├── src/
-│   ├── data/               # 📌 INI YANG PALING SERING DIEDIT (File JSON)
+│   ├── data/               # 🔥 PALING SERING DIEDIT (Pusat data JSON)
 │   │   ├── news.json       # Berita & dokumentasi kegiatan
 │   │   ├── staff.json      # Best staff tiap quarter
 │   │   ├── proker.json     # Info proker tiap divisi
 │   │   └── agenda.json     # Jadwal kegiatan / kalender
 │   │
 │   ├── lib/data/
-│   │   └── team.ts         # 📌 Data nama, jabatan, & foto pengurus kabinet
+│   │   └── team.ts         # 👥 Data nama, jabatan, & foto pengurus kabinet
 │   │
-│   ├── pages/              # Halaman-halaman web
-│   └── components/         # Komponen UI (Navbar, Footer, Hero, dll)
+│   ├── pages/              # 📄 Halaman-halaman web
+│   └── components/         # 🧩 Komponen UI (Navbar, Footer, Hero, dll)
 ```
 
 ---
@@ -133,81 +127,116 @@ IM-Arkatara/
 ### 🚨 PLIS BANGET: Jangan Lupa Kompres Foto ke WebP!
 Jangan pernah upload foto mentahan langsung dari kamera HP/DSLR yang ukurannya 3MB - 10MB ya wkwk! Webnya nanti nangis lemot bgt dibuka kasihan yang akses pake kuota.
 
-- **Wajib convert ke `.webp`**.
-- **Ukuran file**: Usahain di bawah **150 KB** (buat banner gede maks 300 KB).
-- **Website kompres gratis**: Buka [squoosh.app](https://squoosh.app/) atau [tinypng.com](https://tinypng.com/). Upload foto ➔ pilih format WebP ➔ set kualitas ~75% ➔ download.
-- **Nama file**: Jangan pake spasi, lebih aman pake strip, contoh: `kegiatan-agsn-2026.webp`.
+- ✅ **Wajib convert ke `.webp`**.
+- 📏 **Ukuran file**: Usahain di bawah **150 KB** (buat banner gede maks 300 KB).
+- 🏷️ **Nama file**: Jangan pake spasi, lebih aman pake strip, contoh: `kegiatan-agsn-2026.webp`.
+
+**Tools Kompres Gratis & Cepat (Tinggal Klik):**
+<p align="left">
+  <a href="https://squoosh.app/" target="_blank"><img src="https://img.shields.io/badge/Buka_Squoosh.app-Kompres_ke_WebP-FF4081?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Squoosh" /></a>
+  <a href="https://tinypng.com/" target="_blank"><img src="https://img.shields.io/badge/Buka_TinyPNG-Auto_Compress-22AA44?style=for-the-badge&logo=pandora&logoColor=white" alt="TinyPNG" /></a>
+</p>
 
 ---
 
-### 1. Nambah Berita Kegiatan Baru
-File: `src/data/news.json`
+### Panduan Interaktif Pengelolaan Data (Klik untuk Buka Contekan):
+
+<details>
+<summary><strong>📰 1. Cara Nambah Berita Kegiatan Baru (Klik buat buka)</strong></summary>
+
+<br>
+
+**Lokasi File:** [`src/data/news.json`](src/data/news.json)
 
 1. Siapin foto kegiatan yang udah di-convert ke `.webp` dan dikompres.
-2. Masukin fotonya ke `public/assets/nama-foto-kalian.webp`.
-3. Buka `src/data/news.json`, terus tambahin data paling atas:
-   ```json
-   {
-     "id": 11,
-     "kategori": "PDP",
-     "tanggal": "24 OKTOBER 2026",
-     "judul": "Judul Kegiatan atau Proker",
-     "deskripsi": "Ringkasan 1-2 kalimat buat preview kartu berita.",
-     "file_gambar": "/assets/nama-foto-kalian.webp",
-     "konten": [
-       "Paragraf 1: cerita latar belakang kegiatannya...",
-       "Paragraf 2: keseruan acaranya...",
-       "Paragraf 3: penutup dan harapan ke depan..."
-     ]
-   }
-   ```
-   *Kategori yang udah ada filternya:* `"PDP"`, `"PSDM"`, `"Hubeks"`, `"MID"`, `"Enship"`, atau `"Mega Proker"`.
+2. Masukin fotonya ke folder `public/assets/nama-foto-kalian.webp`.
+3. Buka [`src/data/news.json`](src/data/news.json), terus tambahin data berita baru di **paling atas**:
 
----
+```json
+{
+  "id": 11,
+  "kategori": "PDP",
+  "tanggal": "24 OKTOBER 2026",
+  "judul": "Judul Kegiatan atau Proker Kalian",
+  "deskripsi": "Ringkasan 1-2 kalimat buat preview kartu berita.",
+  "file_gambar": "/assets/nama-foto-kalian.webp",
+  "konten": [
+    "Paragraf 1: cerita latar belakang kegiatannya...",
+    "Paragraf 2: keseruan jalannya acara...",
+    "Paragraf 3: penutup dan harapan ke depan..."
+  ]
+}
+```
 
-### 2. Ganti Best Staff Quarter
-File: `src/data/staff.json`
+> 💡 **Pilihan Kategori:**  
+> Gunakan salah satu dari: `"PDP"`, `"PSDM"`, `"Hubeks"`, `"MID"`, `"Enship"`, atau `"Mega Proker"`. Filter di halaman berita bakal langsung mendeteksi otomatis!
+
+</details>
+
+<details>
+<summary><strong>🌟 2. Cara Ganti Best Staff Quarter (Klik buat buka)</strong></summary>
+
+<br>
+
+**Lokasi File:** [`src/data/staff.json`](src/data/staff.json)
 
 1. Siapin 5 poster Best Staff (rasio portrait 3:4, udah format `.webp`).
-2. Masukin ke `public/assets/`, misalnya `staff terbaik 1.webp` sampe `staff terbaik 5.webp`.
-3. Buka `src/data/staff.json`, tinggal edit nama, divisi, sama periodenya:
-   ```json
-   {
-     "id": 1,
-     "nama": "Nama Staf Keren",
-     "divisi": "PDP",
-     "bulan": "Quarter 1",
-     "file_gambar": "/assets/staff terbaik 1.webp"
-   }
-   ```
-   Carousel 3D di beranda bakal otomatis berubah sendiri!
+2. Masukin ke folder `public/assets/`, misalnya `staff terbaik 1.webp` sampe `staff terbaik 5.webp`.
+3. Buka [`src/data/staff.json`](src/data/staff.json), tinggal edit nama, divisi, sama periodenya:
 
----
+```json
+{
+  "id": 1,
+  "nama": "Nama Staf Keren",
+  "divisi": "PDP",
+  "bulan": "Quarter 1",
+  "file_gambar": "/assets/staff terbaik 1.webp"
+}
+```
 
-### 3. Ganti Struktur & Foto Kabinet Baru
-File: `src/lib/data/team.ts`
+Tampilan carousel 3D di beranda bakal otomatis mengupdate poster tersebut! ✨
+
+</details>
+
+<details>
+<summary><strong>👥 3. Cara Ganti Struktur & Foto Kabinet Baru (Klik buat buka)</strong></summary>
+
+<br>
+
+**Lokasi File:** [`src/lib/data/team.ts`](src/lib/data/team.ts)
 
 Kalo udah ganti periode kepengurusan:
 1. Masukin foto-foto pengurus baru ke folder `public/images/team/` (udah ada folder `bph/`, `manager/`, dan `Divisi/`).
-2. Buka `src/lib/data/team.ts`.
-3. Tinggal edit aja array:
+2. Buka [`src/lib/data/team.ts`](src/lib/data/team.ts).
+3. Tinggal sesuaikan nama, jabatan, prodi, dan path foto di 3 array ini:
    - `bph`: BPH (Direktur, Wadir, Sekre, Benda).
    - `managers`: Manajer per divisi.
    - `staffByDivision`: Nama-nama staf per divisi.
-4. Ganti nama, jabatan, sama path fotonya.
 
----
+</details>
 
-### 4. Maskot 3D Owlia & Video Profil
+<details>
+<summary><strong>🦉 4. Maskot 3D Owlia & Video Profil (Klik buat buka)</strong></summary>
+
+<br>
+
 - **Maskot 3D (`public/images/owlia3dfix.glb`)**: Maskot burung Owlia ini udah kita kompres pake Draco (cuma ~590 KB). Kalo mau ganti model 3D baru, jangan lupa dikompres dulu ya biar gak berat.
 - **Video Profile (`public/company_profile.mp4`)**: Udah dipasang sistem lazy-load (baru dimuat pas discroll). Kalo mau ganti video profil kabinet kalian, usahain file-nya < 15 MB atau bisa juga di-embed dari YouTube biar enteng.
+
+</details>
 
 ---
 
 ## 🚢 Cara Deploy ke Web (Biar Langsung Online)
 
-Website ini udah kita konekin ke **Vercel**:
-1. Tiap kalian selesai edit dan tes di lokal, tinggal commit terus push ke branch `main`:
+Website ini udah terhubung otomatis dengan **Vercel**:
+
+<p align="left">
+  <a href="https://ipbmengajar.web.id"><img src="https://img.shields.io/badge/Website_Live-ipbmengajar.web.id-0070F3?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Web" /></a>
+  <a href="https://vercel.com"><img src="https://img.shields.io/badge/Continuous_Deployment-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" /></a>
+</p>
+
+1. Tiap kalian selesai edit dan tes di lokal, tinggal jalankan perintah ini di terminal:
    ```bash
    git add .
    git commit -m "Update konten baru"
@@ -215,14 +244,14 @@ Website ini udah kita konekin ke **Vercel**:
    ```
 2. Vercel bakal otomatis nge-build ulang dan langsung nampilin hasilnya di:  
    👉 **[ipbmengajar.web.id](https://ipbmengajar.web.id)**
-3. Tunggu 1–2 menit, langsung live di internet! ✨
+3. Tunggu 1–2 menit, perubahan sudah langsung live di internet! ✨
 
 ---
 
 ## 💡 Tips Santuy
-- **Biasain `npm run build` dulu:** Sebelum push ke GitHub, tes build dulu di laptop kalian. Biar kalo ada salah ketik ketahuan duluan sebelum webnya error pas di-deploy.
-- **Catet tanggal expired domain:** 08 Juni 2027 ya, chat ke IG [@fiavnz](https://instagram.com/fiavnz) kalau mau diperpanjang!
-- Kalo bingung atau ada kendala kodingan, colek aja kita pengurus sebelumnya, santai aja xixixi!
+- 🛠️ **Biasain `npm run build` dulu:** Sebelum push ke GitHub, tes build dulu di laptop kalian. Biar kalo ada salah ketik ketahuan duluan sebelum webnya error pas di-deploy.
+- 📅 **Catet tanggal expired domain:** **08 Juni 2027** ya, chat ke IG [@fiavnz](https://instagram.com/fiavnz) kalau mau diperpanjang!
+- 🤝 Kalo bingung atau ada kendala kodingan, colek aja kita pengurus sebelumnya, santai aja xixixi!
 
 Semangat melanjutkan perjuangan di IPB Mengajar! Bikin kabinet kalian makin menyala dan berdampak luas! 🚀💛
 
