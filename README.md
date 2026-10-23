@@ -8,7 +8,7 @@
 
 ## 👋 Halo, Pengurus Kabinet Selanjutnya!
 
-Repo ini adalah source code untuk website resmi IPB Mengajar. Tenang aja, kalian nggak perlu pusing mikirin kodingan dari nol atau ngutak-atik struktur yang rumit. 
+Website ini adalah karya sekaligus **warisan dari tim MID (Media, Informasi, dan Dokumentasi) Kabinet Arkatara**. Kami dedikasikan untuk mempermudah publikasi dan kepengurusan IPB Mengajar ke depannya. Tenang aja, kalian nggak perlu pusing mikirin kodingan dari nol atau ngutak-atik struktur yang rumit. 
 
 Sistem di web ini udah dirancang **modular dan berbasis data (JSON)**. Jadi buat kebutuhan rutin sehari-hari kayak:
 - Nambahin berita / dokumentasi kegiatan
@@ -87,7 +87,7 @@ IM-Arkatara/
 │   │   └── agenda.json     # Kalender / jadwal kegiatan
 │   │
 │   ├── lib/data/
-│   │   └── team.ts         # 📌 Data nama, prodi, jabatan, & foto pengurus kabinet
+│   │   └── team.ts         # 📌 Data nama, jabatan, & foto pengurus kabinet
 │   │
 │   ├── pages/              # Halaman web (Home, Berita, Divisi, Tentang Kami, dll)
 │   └── components/         # Komponen UI (Navbar, Footer, Hero, Carousel, dll)
@@ -191,3 +191,10 @@ Website ini sudah tersambung langsung ke **Vercel**:
 - Kalau ada bagian yang bikin bingung atau butuh bantuan teknis, jangan ragu kontak pengurus periode sebelumnya ya!
 
 Semangat melanjutkan estafet perjuangan IPB Mengajar! Semoga websitenya terus bermanfaat dan makin kece! ✨
+
+---
+
+<div align="center">
+  <p>Diwariskan dengan bangga oleh <strong>Divisi MID — Kabinet Arkatara</strong> 🦉💛</p>
+  <p><em>"Langkah Kecil Untuk Negeri"</em></p>
+</div>
