@@ -227,7 +227,7 @@ Kalo udah ganti periode kepengurusan:
 
 ---
 
-## 🚢 Cara Deploy ke Web (Biar Langsung Online)
+## 🚢 Cara Deploy ke Web & Akses Repository
 
 Website ini udah terhubung otomatis dengan **Vercel**:
 
@@ -235,6 +235,12 @@ Website ini udah terhubung otomatis dengan **Vercel**:
   <a href="https://ipbmengajar.web.id"><img src="https://img.shields.io/badge/Website_Live-ipbmengajar.web.id-0070F3?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Web" /></a>
   <a href="https://vercel.com"><img src="https://img.shields.io/badge/Continuous_Deployment-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" /></a>
 </p>
+
+### 🔑 Mau Akses Push ke Repo Ini? (Akses Collaborator)
+> Kalau kabinet kalian tetep mau pakai repository ini (`github.com/dounfi/IM-Arkatara`) biar langsung nyambung ke Vercel tanpa ribet setup ulang dari awal:
+> 
+> **Kalian tinggal chat aku aja di Instagram [@fiavnz](https://instagram.com/fiavnz) buat minta dijadiin Collaborator ya!**  
+> Kasih tahu username GitHub kalian, nanti langsung aku invite biar kalian punya akses push ke repo ini.
 
 1. Tiap kalian selesai edit dan tes di lokal, tinggal jalankan perintah ini di terminal:
    ```bash
@@ -250,6 +256,7 @@ Website ini udah terhubung otomatis dengan **Vercel**:
 
 ## 💡 Tips Santuy
 - 🛠️ **Biasain `npm run build` dulu:** Sebelum push ke GitHub, tes build dulu di laptop kalian. Biar kalo ada salah ketik ketahuan duluan sebelum webnya error pas di-deploy.
+- 🔑 **Akses Repo:** Kalau mau push langsung ke repo ini, chat aku di IG [@fiavnz](https://instagram.com/fiavnz) ya biar aku add jadi Collaborator!
 - 📅 **Catet tanggal expired domain:** **08 Juni 2027** ya, chat ke IG [@fiavnz](https://instagram.com/fiavnz) kalau mau diperpanjang!
 - 🤝 Kalo bingung atau ada kendala kodingan, colek aja kita pengurus sebelumnya, santai aja xixixi!
 
