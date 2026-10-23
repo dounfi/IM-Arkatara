@@ -30,7 +30,7 @@ Panduan lengkapnya ada di bawah, dibaca santai yaa!
 ## ⚠️ PENTING: Masa Aktif Domain `ipbmengajar.web.id` & Solusi Renew!
 
 > **Catetan penting soal domain:**  
-> Domain custom **`ipbmengajar.web.id`** ini kemarin dibeli di provider **DomaiNesia** buat durasi **1 tahun**, dan masa aktifnya bakal **habis tanggal 8 Juni 2027 (08/06/2027)**. Biaya perpanjangnya murah banget kok, cuma sekitar **Rp 55.000 / tahun**.
+> Domain custom **`ipbmengajar.web.id`** ini kemarin dibeli di provider **DomaiNesia** buat durasi **1 tahun**, dan masa aktifnya bakal **habis tanggal 8 Juni 2027 (08/06/2027)**. Biaya perpanjangnya cuma sekitar **Rp 55.000 / tahun**.
 
 Nah, buat kabinet selanjutnya kalau pas udah mau habis, opsinya ada 3:
 
@@ -45,14 +45,26 @@ Nah, buat kabinet selanjutnya kalau pas udah mau habis, opsinya ada 3:
 
 ## 💻 Tech Stack yang Dipake
 
-Biar kalian nggak penasaran jeroan web ini pake apa aja:
-- **Framework**: [React 18](https://react.dev/) + [Vite 5](https://vitejs.dev/) (enteng & cepet bgt pas run lokal)
-- **Bahasa**: [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Animasi**: [Framer Motion](https://www.framer.com/motion/)
-- **Maskot 3D Owlia**: [@google/model-viewer](https://modelviewer.dev/) (burung hantu 3D yang bisa diputer-puter)
-- **Form Kontak**: [EmailJS](https://www.emailjs.com/) (pesan dari web langsung masuk email)
-- **Hosting**: [Vercel](https://vercel.com/) (auto deploy pas push ke branch `main`)
+Biar kalian nggak penasaran jeroan web ini pake apa aja, nih teknologinya:
+
+<p align="left">
+  <a href="https://react.dev/"><img src="https://img.shields.io/badge/React_18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" /></a>
+  <a href="https://vitejs.dev/"><img src="https://img.shields.io/badge/Vite_5-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" /></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /></a>
+  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind" /></a>
+  <a href="https://www.framer.com/motion/"><img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" /></a>
+  <a href="https://vercel.com/"><img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" /></a>
+</p>
+
+| Bagian | Logo & Teknologi | Fungsi & Keterangan |
+| :--- | :--- | :--- |
+| **Framework** | <img src="https://skillicons.dev/icons?i=react,vite" height="24" alt="React & Vite" valign="middle" /> &nbsp; **React 18 + Vite 5** | Enteng, responsif, dan super cepet pas di-run lokal |
+| **Bahasa** | <img src="https://skillicons.dev/icons?i=ts" height="24" alt="TypeScript" valign="middle" /> &nbsp; **TypeScript** | Bikin kodingan rapi dan mencegah salah ketik variabel |
+| **Styling** | <img src="https://skillicons.dev/icons?i=tailwind" height="24" alt="Tailwind CSS" valign="middle" /> &nbsp; **Tailwind CSS** | Styling UI modern, serasi, dan gampang dikustom |
+| **Animasi** | <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white" valign="middle" /> | Animasi transisi halus pas scroll, klik, dan buka halaman |
+| **Maskot 3D** | <img src="https://img.shields.io/badge/%40google%2Fmodel--viewer-4285F4?style=flat-square&logo=google&logoColor=white" valign="middle" /> | Nampilin burung hantu Owlia 3D yang bisa diputer-puter interaktif |
+| **Form Kontak** | <img src="https://img.shields.io/badge/EmailJS-FF7A00?style=flat-square&logo=mail.ru&logoColor=white" valign="middle" /> | Pesan dari pengunjung di web langsung diterusin ke email masuk |
+| **Deploy & Hosting** | <img src="https://skillicons.dev/icons?i=vercel" height="24" alt="Vercel" valign="middle" /> &nbsp; **Vercel** | Auto deploy gratisan, begitu push ke `main` web langsung ke-update |
 
 ---
 
