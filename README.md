@@ -12,6 +12,8 @@ Website ini adalah karya sekaligus **warisan dari tim MID (Media, Informasi, dan
 
 Tenang aja, kalian nggak perlu pusing mikirin kodingan dari nol atau ngutak-atik struktur yang rumit. Soalnya udah kita buat xixixi, tinggal kalian redesign kalo mau! 💅
 
+*(Oiya, maaf ya aku ngetik README ini dibantuin AI soalnya mager wkwk, tapi tenang isinya beneran valid dan udah dicek kok!)*
+
 Semua sistem di web ini udah dirancang **modular dan berbasis data (JSON)**. Jadi buat kebutuhan rutin sehari-hari kayak:
 - Nambahin berita / dokumentasi kegiatan
 - Ganti Best Staff Quarter
