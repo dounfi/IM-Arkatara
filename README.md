@@ -2,6 +2,7 @@
   <img src="public/logo-ipb-mengajar.webp" alt="Logo IPB Mengajar" width="110" />
   <h1>Website IPB Mengajar</h1>
   <p>Website resmi IPB Mengajar • <strong><a href="https://ipbmengajar.web.id">ipbmengajar.web.id</a></strong></p>
+  <p>⚠️ <em>Catatan Penting: Domain <strong>ipbmengajar.web.id</strong> sewa 1 tahun, habis sekitar <strong>07 Juni 2027 (07/06/2027)</strong>. Jangan lupa diperpanjang ya!</em></p>
 </div>
 
 ---
@@ -23,6 +24,13 @@ Semua sistem di web ini udah dirancang **modular dan berbasis data (JSON)**. Jad
 Kalian cukup **edit file JSON di folder `src/data/` atau `src/lib/data/`**, terus cemplungin fotonya ke folder `public/`. Beres deh, tanpa perlu pusing ngoding komponen dari nol!
 
 Panduan lengkapnya ada di bawah, dibaca santai yaa!
+
+---
+
+## ⚠️ PENTING BANGET: Catatan Masa Aktif Domain `ipbmengajar.web.id`!
+> **Inget ya:** Domain custom **`ipbmengajar.web.id`** ini kemarin cuma dibeli buat durasi **1 tahun**, dan masa aktifnya bakal **habis sekitar tanggal 07 Juni 2027 (07/06/2027)**.
+> 
+> Jadi buat temen-temen kabinet selanjutnya, **tolong pasang reminder di Google Calendar atau timeline divisi kalian**! Begitu masuk bulan Mei–Juni 2027, jangan lupa dananya disiapin buat perpanjang (renew) domainnya ya biar websitenya nggak down atau diambil orang lain wkwk.
 
 ---
 
@@ -175,7 +183,7 @@ Kalo udah ganti periode kepengurusan:
 
 ---
 
-## 🚢 Cara Deploy ke Web & Info Domain
+## 🚢 Cara Deploy ke Web (Biar Langsung Online)
 
 Website ini udah kita konekin ke **Vercel**:
 1. Tiap kalian selesai edit dan tes di lokal, tinggal commit terus push ke branch `main`:
@@ -187,11 +195,6 @@ Website ini udah kita konekin ke **Vercel**:
 2. Vercel bakal otomatis nge-build ulang dan langsung nampilin hasilnya di:  
    👉 **[ipbmengajar.web.id](https://ipbmengajar.web.id)**
 3. Tunggu 1–2 menit, langsung live di internet! ✨
-
-### ⚠️ PENTING BANGET: Catatan Masa Aktif Domain `ipbmengajar.web.id`!
-> **Inget ya:** Domain custom **`ipbmengajar.web.id`** ini kemarin cuma dibeli buat durasi **1 tahun**, dan masa aktifnya bakal **habis sekitar tanggal 07 Juni 2027 (07/06/2027)**.
-> 
-> Jadi buat temen-temen kabinet selanjutnya, **tolong pasang reminder di Google Calendar atau timeline divisi kalian**! Begitu masuk bulan Mei–Juni 2027, jangan lupa dananya disiapin buat perpanjang (renew) domainnya ya biar websitenya nggak down atau diambil orang lain wkwk.
 
 ---
 
